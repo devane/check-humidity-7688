@@ -11,6 +11,18 @@ $ sh xCompile.sh -buildroot ~/dev/lede-project/lede/
 where -buildroot is root directory of openwrt/lede source tree configured for linkit smart 7688 (make menuconfig)
 
 
+How to connect it:
+
+DHT11/22 sensors have 3 pins
+1 pin - Data (Signal)
+2 pin - Vcc
+3 pin - Ground
+
+Data or Signal pin is marked as capital S
+
+Here is wiring picture [DHT22 to Mediatek LinkIt Smart 7688](http://horizon9.org/~geroy/download/mediatek-linkit-smart-7688-dht11-wiring.jpg)
+
+============================================================
 
 Adapted code (fastgpio) to get [DHT11-DHT22-Sensor-Examples](https://wiki.onion.io/Tutorials/PHP-DHT11-DHT22-Sensor-Examples) working on Omega*2*(+).
 
