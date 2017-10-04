@@ -11,6 +11,10 @@ $ sh xCompile.sh -buildroot ~/dev/lede-project/lede/
 where -buildroot is root directory of openwrt/lede source tree configured for linkit smart 7688 (make menuconfig)
 
 
+Binary file checHumidity is already compiled for mt7688:
+
+checkHumidity: ELF 32-bit LSB executable, MIPS, MIPS32 rel2 version 1 (SYSV), dynamically linked, interpreter /lib/ld-musl-mipsel-sf.so.1, with debug_info, not stripped
+
 How to connect it:
 
 DHT11/22 sensors have 3 pins
