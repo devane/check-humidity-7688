@@ -2,10 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 #include "dht_read.h"
+#include <time.h> //for printing timestamp
 
 
 int main(int argc, char* argv[])
 {
+  unsigned long int ts_7688 = 0;
   // check for the correct number of arguments
   if ( argc < 3 ) 
   {
@@ -36,7 +38,8 @@ int main(int argc, char* argv[])
     maxRetry--;
   } while(result != 0 && maxRetry > 0);
 
-  printf("%f\n%f\n", humidity, temperature);
+  ts_7688 = time(NULL);
+  printf("%d:%f:%f\n", ts_7688, humidity, temperature);
   if(result == 0)
   {
     return EXIT_SUCCESS;
